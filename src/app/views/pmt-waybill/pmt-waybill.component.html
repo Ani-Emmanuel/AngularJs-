@@ -185,9 +185,7 @@
                 </thead>
                 <tbody>
                   <tr *ngFor="let waybill of pmtwaybills; let i = index">
-                    <th scope="row">
-                      {{ i + 1 }}
-                    </th>
+                    <th scope="row">{{ i + 1 }}</th>
                     <td>{{ waybill.transaction_code }}</td>
                     <td>{{ waybill.boarding_status }}</td>
                     <td>{{ waybill.fare_total }}</td>

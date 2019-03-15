@@ -45,7 +45,7 @@ import { ChartsModule } from "ng2-charts/ng2-charts";
 
 import { JwtInterceptor, ErrorInterceptor } from "./_helpers";
 import { SelectModule } from "ng2-select";
-
+import { SweetAlertService } from "angular-sweetalert-service";
 @NgModule({
   imports: [
     BrowserModule,
@@ -77,7 +77,8 @@ import { SelectModule } from "ng2-select";
     { provide: HTTP_INTERCEPTORS, useClass: ErrorInterceptor, multi: true },
     { provide: LocationStrategy, useClass: HashLocationStrategy },
     DatePipe,
-    UtilsService
+    UtilsService,
+    SweetAlertService
   ],
   bootstrap: [AppComponent]
 })

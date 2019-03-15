@@ -33,7 +33,7 @@ export class ViewWaybillComponent implements OnInit {
     const id = window.localStorage.getItem("waybilldetailsid");
     // console.log(id);
     this.pmtwaybills = this.utilsService.cleanObject(this.getPmtWaybill(id));
-    console.log("this what i want to show" + JSON.stringify(this.pmtwaybills));
+    // console.log("this what i want to show" + JSON.stringify(this.pmtwaybills));
     this.name = "PMTWAYBILL Detail";
     this.id = this.pmtwaybills.id;
     this.transaction_code = this.pmtwaybills.transaction_code;
