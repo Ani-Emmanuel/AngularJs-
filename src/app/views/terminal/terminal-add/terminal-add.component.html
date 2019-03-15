@@ -77,7 +77,7 @@
                             </div>
                             <ng-select id="city" formControlName="city" name="city" 
                               [allowClear]="true" [multiple]="false"
-                              [items]="cities" [active]="active_city"
+                           
                               (data)="refreshValue($event)"
                               (selected)="selected($event)"
                               (removed)="removed($event)"
@@ -97,7 +97,7 @@
                             </div>
                             <ng-select id="county" formControlName="county" name="county" 
                               [allowClear]="true" [multiple]="false"
-                              [items]="counties" [active]="active_county"
+                             
                               (data)="refreshValue($event)"
                               (selected)="selected($event)"
                               (removed)="removed($event)"

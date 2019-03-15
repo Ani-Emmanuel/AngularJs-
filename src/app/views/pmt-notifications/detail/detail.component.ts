@@ -17,6 +17,7 @@ export class DetailComponent implements OnInit {
   ) {}
 
   id: "";
+  name: string;
   user_type: "";
   staff_id: "";
   driver_id: "";
@@ -27,7 +28,7 @@ export class DetailComponent implements OnInit {
   ngOnInit() {
     const id = window.localStorage.getItem("notification_detail");
     this.payload = this.utilsService.cleanObject(this.getNotification(id));
-
+    this.name = "Notification Details";
     this.id = this.payload.id;
     this.user_type = this.payload.user_type;
     this.staff_id = this.payload.staff_id.id;

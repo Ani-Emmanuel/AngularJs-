@@ -16,6 +16,7 @@ export class ViewWaybillComponent implements OnInit {
     private routes: Router
   ) {}
 
+  name: string;
   id: "";
   transaction_code: "";
   pmt_schedule_id: "";
@@ -33,6 +34,7 @@ export class ViewWaybillComponent implements OnInit {
     // console.log(id);
     this.pmtwaybills = this.utilsService.cleanObject(this.getPmtWaybill(id));
     console.log("this what i want to show" + JSON.stringify(this.pmtwaybills));
+    this.name = "PMTWAYBILL Detail";
     this.id = this.pmtwaybills.id;
     this.transaction_code = this.pmtwaybills.transaction_code;
     this.pmt_schedule_id = this.pmtwaybills.pmt_schedule_id;
